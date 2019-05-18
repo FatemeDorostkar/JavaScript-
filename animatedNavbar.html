@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/samim-font/v3.1.0/dist/font-face.css">
+    <style>
+    body{
+        direction: rtl;
+        font-family: "samim";
+    }
+    #sidenav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #E85668;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    #sidenav a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        display: block;
+        font-size: larger;
+        color: #FFE55E;
+        transition: 0.3s;
+    }
+    #sidenav a:hover{
+        color: #F2F8FD;
+    }
+    .xMark{
+        position: absolute;
+        top: 0;
+        right: 120px;
+        margin-right: 50px;
+    }
+    .sandwichIcon{
+        cursor: pointer;
+    }
+    @media(max-height:450px){
+        #sidenav{padding-top: 15px;}
+        #sidenav a{font-size: small;}
+    }
+    </style>
+</head>
+<body>
+    <div id="sidenav">
+        <a href="#" class="xMark" onclick="closeNav()">&times;</a>
+        <a href="#">درباره ما</a>
+        <a href="#">خدمات ما</a>
+        <a href="#">مشتریان ما</a>
+        <a href="#">تماس با ما</a>
+    </div>
+    <h2>وبسایت من</h2>
+    <p>روی آیکون ساندویچ کلیک کنید:</p>
+    <span onclick="openNav()" class="sandwichIcon">&#9776; منوی سایت</span>
+
+    <script>
+        function openNav() {
+        document.getElementById("sidenav").style.width= "210px";
+    }
+    function closeNav() {
+        document.getElementById("sidenav").style.width= "0";
+    }
+    </script>
+</body>
+</html>
