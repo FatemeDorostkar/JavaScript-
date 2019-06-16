@@ -1,0 +1,141 @@
+body{
+    direction: rtl;
+    text-align: right;
+    font-family: "vazir";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #E85668;
+}
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+} 
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #FFE55E;
+    color: black;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.show {
+    display: block;
+}
+
+div#center{
+    display: flex;
+    height: 500px;
+    padding-right: 10px;
+    background-color: beige;
+}
+div#right{
+    flex: 30%;
+}
+div#left{
+    flex: 70%;
+}
+#sidenav, #cartable{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #E85668;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#sidenav a, #cartable a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    color: #FFE55E;
+    transition: 0.3s;
+}
+#cartable a{
+    color: black;
+}
+#sidenav a:hover{
+    color: #F2F8FD;
+}
+#cartable a:hover{
+    color: #E85668;
+}
+.xMark1{
+    position: absolute;
+    top: 0;
+    right: 150px;
+    margin-right: 50px;
+}
+.xMark2{
+    position: absolute;
+    right: 700px;
+    margin-right: 50px;
+}
+.sandwichIcon, .cartableIcon{
+    cursor: pointer;
+}
+#notification{
+    color:  red;
+}
+.socialIcon{
+    background-color: #E85668;
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+}
+.socialIcon:hover{
+    background-color: #FFE55E;
+    color: black;
+    cursor: pointer;
+}
+#header{
+    padding: 20px;
+    height: 110px;
+}
+#footer{
+    text-align: center;
+    padding-top: 20px;
+}
+@media(max-height:450px){
+    #sidenav{padding-top: 15px;}
+    #sidenav a{font-size: small;}
+}

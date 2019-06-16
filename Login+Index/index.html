@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="Font/font-face.css">
+    <link rel="stylesheet" href="Farsi-Digits/farsi-digits.css">
+    <script src="https://kit.fontawesome.com/f452758c76.js"></script>
+</head>
+<body> 
+        <div id="main">
+                <div class="navbar">
+                        <a href="#home"><i class="fab fa-houzz menuIcon"></i> خانه</a>
+                        <div class="dropdown">
+                        <button class="dropbtn" onclick="openDropdown()"> <i class="fab fa-atlassian"></i> درباره ما
+                        <i class="fas fa-caret-down"></i> 
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                                <a href="#">تاریخچه</a>
+                                <a href="#">اهداف</a>
+                                <a href="#">مدیران</a>
+                        </div>
+                        </div> 
+                        <a href="#services"> <i class="fab fa-stripe-s menuIcon"></i> خدمات ما</a>
+                        <a href="#customers"> <i class="fab fa-cuttlefish menuIcon"></i> مشتریان ما</a>
+                        <a href="#contact"> <i class="fas fa-phone menuIcon"></i> تماس با ما</a>        
+                </div>
+        
+                <div id="center">
+                <div id="right">
+                        <div id="sidenav">
+                                <a href="#" class="xMark1" onclick="closeNav()">&times;</a>
+                                <a href="#">اطلاعات فردی</a>
+                                <a href="#">حقوق و مزایا</a>
+                                <a href="#">بیمه</a>
+                                <a href="#">مالیات</a>
+                        </div>
+                        <h4>روی آیکون منو کلیک کنید:</h4>
+                        <span onclick="openNav()" class="sandwichIcon">&#9776; منوی فردی</span>                
+                </div>
+                <div id="left">
+                    <h4>روی آیکون کارتابل کلیک کنید:</h4>
+                    <span onclick="openCartable()" class="cartableIcon"><i class="far fa-file-archive"></i> کارتابل </span>
+                    <span id="notification">3</span>
+                    <br>
+                    <div id="cartable">
+                            <a href="#" class="xMark2" onclick="closeCartable()">&times;</a>
+                            <a href="#"> <i class="fas fa-briefcase"></i> وظایف</a>
+                            <a href="#"> <i class="fas fa-mail-bulk"></i> نامه ها</a>
+                            <a href="#"> <i class="fas fa-clipboard-list"></i> پیگیری ها</a>
+                            <a href="#"> <i class="fas fa-archive"></i> بایگانی</a>
+                    </div>
+            </div>
+            </div>
+            <div id="footer">
+                    <i>ما را در شبکه های اجتماعی دنبال کنید:</i>
+                    <br>
+                    <br>
+                    <a href="#"><i class="fab fa-twitter socialIcon"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f socialIcon"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p socialIcon"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g socialIcon"></i></a>
+                    <a href="#"><i class="fab fa-instagram socialIcon"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    <script src="js/index.js"></script>
+</body>
+</html>

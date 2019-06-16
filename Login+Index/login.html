@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>صفحه ورود</title>
+    <link type="text/css" rel="stylesheet"
+    href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v4.0.0/dist/font-face.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="Font/font-face.css">
+    <link rel="stylesheet" href="Farsi-Digits/farsi-digits.css">
+</head>
+<body>
+    <p id="login">برای ورود به پورتال خود، روی دکمه ی زیر کلیک کنید:</p>
+    <br>
+    <button id="loginbtn" onclick="login()">ورود</button>
+    <div id="id01" class="modal">
+        <div class="imgcontainer">
+            <span class="close" title="بستن بنجره" onclick="closeLoginPage()">&times;</span>
+            <img src="images/user avatar.png" alt="avatar" class="avatar">
+        </div>
+        <form action="index.html" class="modal-content animate">
+            <div class="container">
+            <label for="PersonneID"><b>شماره پرسنلی</b> </label>
+            <input type="number" name="uname" placeholder=" شماره پرسنلی خود را وارد کنید..." required>
+
+            <label for="fname"><b>نام</b> </label>
+            <input type="text" name="psw" placeholder="  نام خود را وارد کنید..." required>
+
+            <label for="lname"><b>نام خانوادگی</b> </label>
+            <input type="text" name="uname" placeholder="نام خانوادگی خود را وارد کنید..." required>
+
+            <label for="NationalID"><b>شماره ملی </b> </label>
+            <input type="number" name="psw" placeholder="  شماره ملی خود را وارد کنید..." required>
+
+            <button type="submit">ورود</button>
+            <button type="button" class="cancelbtn" onclick="closeLoginPage()">لغو</button>
+            <br>
+            <input type="checkbox" checked name="remember">مرا به خاطر بسپار
+            <div class="container">
+            </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
